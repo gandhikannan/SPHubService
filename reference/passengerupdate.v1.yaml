@@ -1,0 +1,24 @@
+openapi: 3.0.0
+info:
+  title: PassengerUpdate
+  version: '1.0'
+servers:
+  - url: 'http://nec.iaim.aai.com:3000/SPHubService'
+paths:
+  '/pasenger/{passengerId}':
+    parameters:
+      - type: string
+        name: passengerId
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+    put:
+      summary: Update Passenger Metadata
+      responses:
+        '200':
+          description: OK
+components:
+  schemas: {}
